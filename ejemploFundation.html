@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5dc02e1930.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <a href=" principal.html " style="color: cornflowerblue; font-size: 20px; ">Principal</a>
+
+    <form>
+        <div class="callout alert">
+            <div class="grid-container">
+                <div class="grid-x grid-padding-x">
+
+                    <div class="medium-6 cell">
+                        <label><i class="fas fa-user-check"></i> Nombre: </label>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="medium-6 cell">
+                        <label><i class="fas fa-phone-volume"></i> Telefono:</label>
+                        <input type="text" placeholder="">
+                    </div>
+                </div>
+                <div class="grid-x grid-padding-x">
+                    <div class="small-3 cell">
+                        <label for="middle-label" class="text-right middle"><i class="fas fa-envelope"></i> Email:</label>
+                    </div>
+                    <div class="medium-6 cell">
+                        <input type="text" id="middle-label" placeholder="jenni@example.com">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="callout secondary">
+            <fieldset class="fieldset">
+                <legend><i class="fas fa-bus-alt"></i>Que vehiculo desea?</legend>
+                <input id="checkbox12" type="checkbox"><label for="checkbox12">Taxi</label>
+                <input id="checkbox22" type="checkbox"><label for="checkbox22">Suv</label>
+                <input id="checkbox32" type="checkbox"><label for="checkbox32">Tuktuk</label>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend><i class="far fa-clipboard"></i>Extras...?</legend>
+                <input id="checkbox12" type="radio"><label for="checkbox12">No musica</label>
+                <input id="checkbox22" type="radio"><label for="checkbox22">No partidos de futbol</label>
+                <input id="checkbox32" type="radio"><label for="checkbox32">silla de ruedas</label>
+            </fieldset>
+            <label><i class="fas fa-map-marked-alt"></i> Partida:
+                    <select>
+              <option selected>Seleccionar...</option>
+              <option>Oficina</option>
+              <option>Feria</option>
+              <option>Universidad</option>
+          </select>
+                    </label>
+            <div class="col-md-4"><label for="inputState " class="form-label "><i class="fas fa-map-marked"></i> Destino: </i></label>
+                <input class="form-control" type="text" required list="destino" />
+                <datalist id="destino">
+            <option value="Aeropuerto"></option>
+            <option value="Playa"></option>
+            <option value="Biblioteca"></option>
+        </datalist>
+            </div>
+        </div>
+        <div class="callout secondary">
+            <label>
+                <i class="fas fa-clipboard"></i>
+            <textarea placeholder="Instrucciones especiales"></textarea>
+          </label>
+
+
+
+
+            <div class="col-md-4"><label for="inputState " class="form-label">
+            <label for="floatingTextarea2"><i class="far fa-calendar-times"></i>Fecha y Hora:</label>
+                <input type="datetime-local" class="form-control" name="fehca_hora" required/>
+            </div>
+
+            <a class="button expanded" href="#">Hacer Cita</a>
+        </div>
+        </div>
+    </form>
+</body>
+
+</html>
